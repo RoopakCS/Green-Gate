@@ -1,38 +1,12 @@
-/*const translations = {
-    en: {
-      welcome: "Welcome to Harvest Hub",
-      name: "Name",
-      email: "Email",
-      mobile: "Mobile",
-      password: "Password",
-      register: "Register",
-      userExists: "User already exists",
-      userCreated: "User Created",
-    },
-    hi: {
-      welcome: "हार्वेस्ट हब में आपका स्वागत है",
-      name: "नाम",
-      email: "ईमेल",
-      mobile: "मोबाइल",
-      password: "पासवर्ड",
-      register: "रजिस्टर करें",
-      userExists: "उपयोगकर्ता पहले से मौजूद है",
-      userCreated: "उपयोगकर्ता बनाया गया",
-    },
-    // Add more languages as needed
-  };
-  
-  export default translations;
-  */
-
-  import i18n from 'i18next';
+import 'intl-pluralrules';
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 // Language translations
 const resources = {
   en: {
     translation: {
-        welcome: "Welcome to Harvest Hub",
+        welcome: "Login",
         name: "Name",
         email: "Email",
         mobile: "Mobile",
@@ -44,7 +18,7 @@ const resources = {
   },
   hi: {
     translation: {
-        welcome: "हार्वेस्ट हब में आपका स्वागत है",
+        welcome: "लॉग इन करें",
         name: "नाम",
         email: "ईमेल",
         mobile: "मोबाइल",
@@ -56,7 +30,7 @@ const resources = {
   },
   tam: {
     translation: {
-        welcome: "பண்டிகை களம் வரவேற்கிறது",
+        welcome: "உள்நுழைக",
         name: "பெயர்",
         email: "மின்னஞ்சல்",
         mobile: "மொபைல்",
@@ -68,7 +42,7 @@ const resources = {
   },
   tel: {
     translation: {
-        welcome: "పంట హబ్ కు స్వాగతం",
+        welcome: "లాగిన్ చేయండి",
         name: "పేరు",
         email: "ఈమెయిల్",
         mobile: "మొబైల్",
@@ -77,7 +51,19 @@ const resources = {
         userExists: "వాడుకరి ఇప్పటికే ఉన్నారు",
         userCreated: "వాడుకరి సృష్టించబడింది"
     }
-  }
+  },
+  mal: {
+    translation: {
+          welcome: "ലോഗിൻ",
+          name: "പേര്",
+          email: "ഇമെയിൽ",
+          mobile: "മൊബൈൽ",
+          password: "പാസ്വേഡ്",
+          register: "രജിസ്റ്റർ",
+          userExists: "ഉപയോക്താവ് ഇതിനകം നിലവിലുണ്ട്",
+          userCreated: "ഉപയോക്താവ് സൃഷ്ടിച്ചു"
+    }
+  },
 };
 
 i18n

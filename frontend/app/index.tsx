@@ -61,7 +61,7 @@ export default function RegisterForm() {
           <Button 
             title={t('register')} 
             onPress={handleSubmit} 
-            color="#8fbc8f" // Light green
+            color="#FF4433" // Light green
           />
         </View>
         {message && <Text style={styles.message}>{message}</Text>}

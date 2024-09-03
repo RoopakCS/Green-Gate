@@ -26,6 +26,7 @@ export default function Layout() {
           <Picker.Item label="हिन्दी" value="hi" />
           <Picker.Item label="தமிழ்" value="tam" />
           <Picker.Item label="తెలుగు" value="tel" />
+          <Picker.Item label="మలయాళం" value="mal" />
           {/* Add more languages here */}
         </Picker>
       </View>
